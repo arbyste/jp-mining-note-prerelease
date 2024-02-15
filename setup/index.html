@@ -1917,24 +1917,12 @@ I recommend downloading the latest version, to avoid having to do extra steps du
 <h2 id="installing-jp-mining-note">Installing jp-mining-note<a class="headerlink" href="#installing-jp-mining-note" title="Permanent link">¶</a></h2>
 <p>There are three ways of installing the note:</p>
 <ol>
-<li>
-<p>Via <strong>JPMN Manager</strong>, a small Anki add-on that can install and update jp-mining-note,
+<li>Via <strong>JPMN Manager</strong>, a small Anki add-on that can install and update jp-mining-note,
     as well as notify you when updates are available.
-    <em>If you don't know which method to choose, choose this one</em>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>On this temporary bugfix fork of JPMN, you <strong>cannot use JPMN Manager to
-install the note.</strong> This functionality will return when Aquafina resumes
-maintenance of JPMN. See
-<a href="../faq/#why-cant-i-use-jpmn-manager-on-this-temporary-bugfix-fork">here</a>
-for more details.</p>
-</div>
-</li>
-<li>
-<p>Via <strong>command line</strong>.
+    <em>If you don't know which method to choose, choose this one</em>.</li>
+<li>Via <strong>command line</strong>.
     This method is recommended for people who are familiar with <code>git</code> and <code>python</code>,
-    and don't want to download another Anki add-on.</p>
-</li>
+    and don't want to download another Anki add-on.</li>
 <li><strong>Manually</strong>, using Anki.
     This tends to be more error-prone due to having many more potential points of failure.
     Therefore, I wouldn't recommend installing the note this way.
@@ -1942,37 +1930,46 @@ for more details.</p>
 </ol>
 <details class="info">
 <summary>Option 1: JPMN Manager <small>(click here)</small></summary>
-<p>As noted above, on this temporary bugfix fork of JPMN, you cannot use
-Option 1. Please use Option 2, or Option 3 if you definitely know what
-you're doing.</p>
-</details>
-<!--
-    1.  To install any Anki add-on, navigate to:
-
-        > (Main Window) →  `Tools` →  `Add-ons` →  `Get Add-ons...`
-
-        From here, you can install
-        [JPMN Manager](https://ankiweb.net/shared/info/1732829476)
-        and
-        [Anki-Connect](https://ankiweb.net/shared/info/2055492159)
-        by using the following add-on codes:
-        <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>1732829476 2055492159
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have previously installed <a href="https://ankiweb.net/shared/info/1732829476">Aquafina's old version</a>
+of the JPMN add-on, then you must remove it before installing the new version below.
+The old and new versions will conflict with each other if they are both
+installed. In your list of Anki add-ons, you should only see
+<code>JPMN Manager with prereleases New Version</code>. If you see
+<code>JPMN Manager with prereleases</code> then please remove it and restart Anki
+before proceeding.</p>
+</div>
+<ol>
+<li>
+<p>To install any Anki add-on, navigate to:</p>
+<blockquote>
+<p>(Main Window) →  <code>Tools</code> →  <code>Add-ons</code> →  <code>Get Add-ons...</code></p>
+</blockquote>
+<p>From here, you can install
+<a href="https://ankiweb.net/shared/info/301910299">JPMN Manager</a>
+and
+<a href="https://ankiweb.net/shared/info/2055492159">Anki-Connect</a>
+by using the following add-on codes:
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>301910299 2055492159
 </code></pre></div>
-
-    1. Restart Anki, to load the new add-ons.
-    1. Within Anki, navigate to the following:
-
-        > (Main Window) →  `Tools` →  `JPMN Manager` →  `Install jp-mining-note`
-
-        This will install latest stable version of the note,
-        as well as the fonts required for the note to work. <br>
-        Note: Installing jp-mining-note might take a while, and Anki may appear frozen.
-
-    ![type:video](assets/setup/jpmn_manager-0.12.0.0-prerelease-3.mp4)
-
-
-    -->
-
+</li>
+<li>
+<p>Restart Anki, to load the new add-ons.</p>
+</li>
+<li>
+<p>Within Anki, navigate to the following:</p>
+<blockquote>
+<p>(Main Window) →  <code>Tools</code> →  <code>JPMN Manager</code> →  <code>Install jp-mining-note</code></p>
+</blockquote>
+<p>This will install latest version of the note,
+as well as the fonts required for the note to work. <br>
+Note: Installing jp-mining-note might take a while, and Anki may appear frozen.</p>
+</li>
+</ol>
+<p><div class="video-container"><video style="width:100%;height:100%" controls alt="type:video"><source src="../assets/setup/jpmn_manager-0.12.0.0-prerelease-3.mp4" type="video/mp4"></source></video></div></p>
+<p>--&gt;</p>
+</details>
 <details class="info">
 <summary>Option 2: Command Line <small>(click here)</small></summary>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">macOS &amp; Linux</label></div>
@@ -2081,7 +2078,7 @@ In particular, some add-ons are required for the note to work.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 13, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 15, 2024</span>
       
     
   </small>

@@ -1918,65 +1918,58 @@ If you are looking for the stable release documentation, see <a href="https://ar
 <h2 id="updating-the-note">Updating the Note<a class="headerlink" href="#updating-the-note" title="Permanent link">¶</a></h2>
 <p>You can update the note in one of two ways:</p>
 <ol>
-<li>
-<p>Via <strong>JPMN Manager</strong>, an Anki add-on.
-    <em>If you don't know which method to choose, choose this one</em>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>On this temporary bugfix fork of JPMN, you <strong>cannot use JPMN Manager to
-update the note.</strong> This functionality will return when Aquafina resumes
-maintenance of JPMN. See
-<a href="../faq/#why-cant-i-use-jpmn-manager-on-this-temporary-bugfix-fork">here</a>
-for more details.</p>
-</div>
-</li>
-<li>
-<p>Via <strong>command line</strong>.
+<li>Via <strong>JPMN Manager</strong>, an Anki add-on.
+    <em>If you don't know which method to choose, choose this one</em>.</li>
+<li>Via <strong>command line</strong>.
     This method is recommended for people who are familiar with <code>git</code> and <code>python</code>,
-    and don't want to download an Anki add-on.</p>
-</li>
+    and don't want to download an Anki add-on.</li>
 </ol>
 <details class="info">
 <summary>Option 1: Via JPMN Manager <small>(click here)</small></summary>
-<p>As noted above, on this temporary bugfix fork of JPMN, you cannot use
-Option 1. Please use Option 2.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have previously installed <a href="https://ankiweb.net/shared/info/1732829476">Aquafina's old version</a>
+of the JPMN add-on, then you must remove it before installing the new version below.
+The old and new versions will conflict with each other if they are both
+installed. In your list of Anki add-ons, you should only see
+<code>JPMN Manager with prereleases New Version</code>. If you see
+<code>JPMN Manager with prereleases</code> then please remove it and restart Anki
+before proceeding.</p>
+</div>
+<p>This add-on simply wraps around the python script mentioned below,
+and should behave the exact same as running the script manually.</p>
+<details class="example">
+<summary>Video demo <small>(click here)</small></summary>
+<p><div class="video-container"><video style="width:100%;height:100%" controls alt="type:video"><source src="../assets/updating/update_jpmn_manager-0.12.0.0-prerelease-3.mp4" type="video/mp4"></source></video></div></p>
 </details>
-<!--
-    This add-on simply wraps around the python script mentioned below,
-    and should behave the exact same as running the script manually.
-
-    ??? example "Video demo <small>(click here)</small>"
-        ![type:video](assets/updating/update_jpmn_manager-0.12.0.0-prerelease-3.mp4)
-
-    1. If you haven't installed the JPMN Manager add-on yet, do so with the following code:
-        `1732829476`.
-        Be sure to restart Anki after installing.
-    1. Make sure there is something to update to in the first place.
-        You can do this by:
-
-        > (Main Window) →  `Tools` →  `JPMN Manager` →  `Check for note updates`
-
-    1. Update the note by navigating to the following: <br>
-
-        > (Main Window) →  `Tools` →  `JPMN Manager` →  `Update jp-mining-note`
-
-    1. You may see additional instructions. If you do, please continue the
-        updating process with the [Setup Changes](setupchanges.md) page
-
-
-
-
-    There may be further steps outside of just updating the card,
-    such as updating Yomichan's templates / format.
-    These should be recorded in the [Setup Changes](setupchanges.md) page.
-
-    Afterward seeing that page, please view the [final steps](updating.md#final-steps) section.
-
-
-
-
--->
-
+<ol>
+<li>If you haven't installed the JPMN Manager add-on yet, do so with the following code:
+    <code>301910299</code>.
+    Be sure to restart Anki after installing.</li>
+<li>
+<p>Make sure there is something to update to in the first place.
+    You can do this by:</p>
+<blockquote>
+<p>(Main Window) →  <code>Tools</code> →  <code>JPMN Manager</code> →  <code>Check for note updates</code></p>
+</blockquote>
+</li>
+<li>
+<p>Update the note by navigating to the following: <br></p>
+<blockquote>
+<p>(Main Window) →  <code>Tools</code> →  <code>JPMN Manager</code> →  <code>Update jp-mining-note</code></p>
+</blockquote>
+</li>
+<li>
+<p>You may see additional instructions. If you do, please continue the
+    updating process with the <a href="../setupchanges/">Setup Changes</a> page</p>
+</li>
+</ol>
+<p>There may be further steps outside of just updating the card,
+such as updating Yomichan's templates / format.
+These should be recorded in the <a href="../setupchanges/">Setup Changes</a> page.</p>
+<p>Afterward seeing that page, please view the <a href="../updating/#final-steps">final steps</a> section.</p>
+</details>
+<p>--&gt;</p>
 <details class="info">
 <summary>Option 2: Via Command Line <small>(click here)</small></summary>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">Linux &amp; macOS</label></div>
@@ -2129,7 +2122,7 @@ for more info on why they cannot be ignored.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 19, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 15, 2024</span>
       
     
   </small>
