@@ -1210,8 +1210,15 @@ If you are looking for the stable release documentation, see <a href="https://ar
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-disable-collapsed-images" class="md-nav__link">
-    How to Disable Collapsed Images
+  <a href="#how-to-collapse-yomitan-images" class="md-nav__link">
+    How to Collapse Yomitan Images
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-disable-collapsed-user-images" class="md-nav__link">
+    How to Disable Collapsed User Images
   </a>
   
 </li>
@@ -1905,8 +1912,15 @@ If you are looking for the stable release documentation, see <a href="https://ar
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-to-disable-collapsed-images" class="md-nav__link">
-    How to Disable Collapsed Images
+  <a href="#how-to-collapse-yomitan-images" class="md-nav__link">
+    How to Collapse Yomitan Images
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-disable-collapsed-user-images" class="md-nav__link">
+    How to Disable Collapsed User Images
   </a>
   
 </li>
@@ -2030,7 +2044,7 @@ If you want to add more than one image, add the remaining images under
 </div>
 <hr>
 <h2 id="automatically-add-images-using-tags">Automatically Add Images Using Tags<a class="headerlink" href="#automatically-add-images-using-tags" title="Permanent link">¶</a></h2>
-<p><sup><i>New in version <code>0.11.0.0</code> (latest version: <code>0.12.0.0-prerelease-15</code>)</i></sup></p>
+<p><sup><i>New in version <code>0.11.0.0</code> (latest version: <code>0.12.0.0-prerelease-16</code>)</i></sup></p>
 <p>One can automatically add a specific image if a card contains
 a specific tag.</p>
 <p>This is particularily useful for cards made from written media, such as books.
@@ -2051,39 +2065,47 @@ to automatically set the image to the cover of the book.</p>
 <p>TODO example gif</p>
 <hr>
 <h2 id="collapsed-images">Collapsed Images<a class="headerlink" href="#collapsed-images" title="Permanent link">¶</a></h2>
-<p>Any customly inserted images, including images inserted directly by Yomichan,
+<p>Any images that are added to a definition by Yomitan are shown by default. If you
+add a custom image to a definiton however, it
 will be converted to text which you have to hover over to reveal.
 Of course, this image can also be clicked on to zoom.
 See the video demo below to see exactly what happens.</p>
 <p><div class="video-container"><video style="width:100%;height:100%" controls alt="type:video"><source src="../assets/images/collapsed_images.mp4" type="video/mp4"></source></video></div></p>
-<h3 id="how-to-disable-collapsed-images">How to Disable Collapsed Images<a class="headerlink" href="#how-to-disable-collapsed-images" title="Permanent link">¶</a></h3>
-<p>There are several ways of disabling collapsed images.</p>
+<h3 id="how-to-collapse-yomitan-images">How to Collapse Yomitan Images<a class="headerlink" href="#how-to-collapse-yomitan-images" title="Permanent link">¶</a></h3>
+<p>If you want images from Yomitan to be collapsed by default, add the following
+to your <a href="../runtimeoptions/">runtime options</a>:</p>
+<div class="highlight"><pre><span></span><code>```json
+"imgStylizer.glossary.primaryDef.mode.yomichan": "collapse",
+```
+</code></pre></div>
+<h3 id="how-to-disable-collapsed-user-images">How to Disable Collapsed User Images<a class="headerlink" href="#how-to-disable-collapsed-user-images" title="Permanent link">¶</a></h3>
+<p>There are several ways of disabling collapsed user images.</p>
 <ol>
 <li>
 <p>Place your images in the <code>PrimaryDefinitionPicture</code> field, as shown in the <a href="./#the-primarydefinitionpicture-field">section below</a>.</p>
 </li>
 <li>
 <p>Disable it globally in the <a href="../runtimeoptions/">runtime options</a>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// alternatively, try "none" instead of "float".</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">"imgStylizer.glossary.primaryDef.mode.yomichan"</span><span class="p">:</span><span class="w"> </span><span class="s2">"float"</span><span class="p">,</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1">// alternatively, try "none" instead of "float".</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nt">"imgStylizer.glossary.primaryDef.mode.user"</span><span class="p">:</span><span class="w"> </span><span class="s2">"float"</span><span class="p">,</span>
 </code></pre></div>
 </li>
 <li>
-<p>Disable it per card, by adding the following tag: <code>img-yomichan-float</code>.
-    Alternatively, try adding <code>img-yomichan-no-styling</code>.</p>
+<p>Disable it per card, by adding the following tag: <code>img-user-float</code>.
+    Alternatively, try adding <code>img-user-no-styling</code>.</p>
 </li>
 <li>
 <p>To disable this for only specific images,
     <a href="../faq/#how-do-i-edit-the-fields-raw-html">edit the HTML</a>
     of the desired field, and add <code>data-do-not-convert="true"</code>.</p>
 <p>For example:
-</p><div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"your_image.png"</span> <span class="na">data-do-not-convert</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>
+</p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"your_image.png"</span> <span class="na">data-do-not-convert</span><span class="o">=</span><span class="s">"true"</span><span class="p">&gt;</span>
 </code></pre></div>
 </li>
 </ol>
 <hr>
 <h2 id="the-primarydefinitionpicture-field">The <code>PrimaryDefinitionPicture</code> Field<a class="headerlink" href="#the-primarydefinitionpicture-field" title="Permanent link">¶</a></h2>
-<p><sup><i>New in version <code>0.11.0.0</code> (latest version: <code>0.12.0.0-prerelease-15</code>)</i></sup></p>
+<p><sup><i>New in version <code>0.11.0.0</code> (latest version: <code>0.12.0.0-prerelease-16</code>)</i></sup></p>
 <p>This field can be used to place images in the Primary Definition section without collapsing the image.
 Large images are automatically resized to fit the area.</p>
 <p>This is useful if one wants to put images in place of, or to suppliment definitions.
@@ -2141,10 +2163,10 @@ does not need to contain pictures.
 For example, one can add text, tables, or links to the field.</p>
 </div>
 <h3 id="changing-automatic-positioning-behavior">Changing Automatic Positioning Behavior<a class="headerlink" href="#changing-automatic-positioning-behavior" title="Permanent link">¶</a></h3>
-<p><sup><i>New in version <code>0.12.0.0</code> (latest version: <code>0.12.0.0-prerelease-15</code>)</i></sup></p>
+<p><sup><i>New in version <code>0.12.0.0</code> (latest version: <code>0.12.0.0-prerelease-16</code>)</i></sup></p>
 <p>The following <a href="../runtimeoptions/">runtime option</a> can be used to change how the primary definition picture is positioned:</p>
-<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">// Valid options (case sensitive): "auto", "bottom", "right", "top"</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nt">"imgStylizer.glossary.floatImg.position"</span><span class="p">:</span><span class="w"> </span><span class="s2">"auto"</span><span class="p">,</span>
+<p></p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">// Valid options (case sensitive): "auto", "bottom", "right", "top"</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nt">"imgStylizer.glossary.floatImg.position"</span><span class="p">:</span><span class="w"> </span><span class="s2">"auto"</span><span class="p">,</span>
 </code></pre></div>
 The options <code>bottom</code>, <code>right</code>, and <code>top</code> force the image to always be placed
 below, to the right, and above the definition, respectively.
@@ -2161,7 +2183,7 @@ by adding any of the following tags to the card:</p>
 </ul>
 <hr>
 <h2 id="image-blur">Image Blur<a class="headerlink" href="#image-blur" title="Permanent link">¶</a></h2>
-<p><sup><i>New in version <code>0.10.3.0</code> (latest version: <code>0.12.0.0-prerelease-15</code>)</i></sup></p>
+<p><sup><i>New in version <code>0.10.3.0</code> (latest version: <code>0.12.0.0-prerelease-16</code>)</i></sup></p>
 <p>Images on cards can be automatically blurred by marking it with a NSFW tag.
 To mark a card as NSFW, add any of the following tags to the card:</p>
 <blockquote>
@@ -2170,12 +2192,12 @@ To mark a card as NSFW, add any of the following tags to the card:</p>
 <p>This behavior is <strong>disabled by default</strong>. In other words, you will not be able to blur
 images unless the following setting is explicitly enabled
 in the <a href="../runtimeoptions/">runtime options</a>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nt">"imgStylizer.mainImage.blur.enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="c1">// (1)!</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">"imgStylizer.mainImage.blur.enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="c1">// (1)!</span>
 </code></pre></div>
 <ol>
 <li>The <code>imgStylizer</code> module must be enabled to use the image blur feature.
     For example:
-    <div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nt">"imgStylizer.enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nt">"imgStylizer.enabled"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 </code></pre></div>
     This is enabled by default, so you likely don't need to manually enable this module.</li>
 </ol>
@@ -2291,7 +2313,7 @@ By default, states cycle from left to right.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 9, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 16, 2024</span>
       
     
   </small>
