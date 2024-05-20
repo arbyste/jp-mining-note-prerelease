@@ -564,8 +564,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
   
   
     <li class="md-nav__item">
-      <a href="../setupyomichan/" class="md-nav__link">
-        Setup: Yomichan
+      <a href="../setupyomitan/" class="md-nav__link">
+        Setup: Yomitan
       </a>
     </li>
   
@@ -735,8 +735,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
   
   
     <li class="md-nav__item">
-      <a href="../setupextrayomichan/" class="md-nav__link">
-        Extra: Yomichan
+      <a href="../setupextrayomitan/" class="md-nav__link">
+        Extra: Yomitan
       </a>
     </li>
   
@@ -953,8 +953,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
   
   
     <li class="md-nav__item">
-      <a href="../updatingyomichan/" class="md-nav__link">
-        Updating: Yomichan
+      <a href="../updatingyomitan/" class="md-nav__link">
+        Updating: Yomitan
       </a>
     </li>
   
@@ -1181,8 +1181,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
 </li>
         
           <li class="md-nav__item">
-  <a href="#usage-on-yomichans-search-page-clipboard-page" class="md-nav__link">
-    Usage on Yomichan's Search Page / Clipboard Page
+  <a href="#usage-on-yomitans-search-page-clipboard-page" class="md-nav__link">
+    Usage on Yomitan's Search Page / Clipboard Page
   </a>
   
 </li>
@@ -1557,8 +1557,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
   
   
     <li class="md-nav__item">
-      <a href="../yomichantemplates/" class="md-nav__link">
-        Yomichan Template Options (TODO)
+      <a href="../yomitantemplates/" class="md-nav__link">
+        Yomitan Template Options (TODO)
       </a>
     </li>
   
@@ -1995,8 +1995,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
 </li>
         
           <li class="md-nav__item">
-  <a href="#usage-on-yomichans-search-page-clipboard-page" class="md-nav__link">
-    Usage on Yomichan's Search Page / Clipboard Page
+  <a href="#usage-on-yomitans-search-page-clipboard-page" class="md-nav__link">
+    Usage on Yomitan's Search Page / Clipboard Page
   </a>
   
 </li>
@@ -2101,14 +2101,14 @@ how definitions can be easily chosen, overwritten and customized overall.</p>
 <hr>
 <h2 id="dictionary-placement">Dictionary Placement<a class="headerlink" href="#dictionary-placement" title="Permanent link">¶</a></h2>
 <!--
-This section deals with how the custom Yomichan Templates categorizes dictionaries,
+This section deals with how the custom Yomitan Templates categorizes dictionaries,
 and how to properly customize them for your setup.
 
 
 ## Expected Dictionary Placement
 -->
 
-<p>Dictionaries from Yomichan are sorted into the following fields:</p>
+<p>Dictionaries from Yomitan are sorted into the following fields:</p>
 <!--
 * `PrimaryDefinition`:
     A dictionary specified by the user. Bilingual by default.
@@ -2193,10 +2193,10 @@ of the two above, so no handlebars code has to be changed if one were to
 use more monolingual dictionaries.</p>
 <p>To see how to edit the regex, go to <a href="#editing-the-dictionary-regex">this section</a>.</p>
 <h3 id="ignoring-a-dictionary">Ignoring a Dictionary<a class="headerlink" href="#ignoring-a-dictionary" title="Permanent link">¶</a></h3>
-<p>If you want to see the dictionary on Yomichan but not have it show on Anki,
+<p>If you want to see the dictionary on Yomitan but not have it show on Anki,
 you can use the <code>ignored-dict-regex</code> option.</p>
 <p>To see how to edit the option, see <a href="#editing-the-dictionary-regex">the section below</a>.</p>
-<p>Conversely, if you want to not see the dictionary on Yomichan but want it to show up on Anki,
+<p>Conversely, if you want to not see the dictionary on Yomitan but want it to show up on Anki,
 <a href="../jpresources/#hide-the-dictionary-but-allow-it-to-be-used-by-anki">see here</a>.</p>
 <h3 id="editing-the-dictionary-regex">Editing the dictionary regex<a class="headerlink" href="#editing-the-dictionary-regex" title="Permanent link">¶</a></h3>
 <p>To modify a regex string:</p>
@@ -2225,8 +2225,8 @@ For example, if you want to add the bilingual dictionaries
 the dictionary name or a section of the definition.</p>
 <h3 id="primary-definition-selection-automatic">Primary Definition Selection: Automatic<a class="headerlink" href="#primary-definition-selection-automatic" title="Permanent link">¶</a></h3>
 <p>The dictionary for the primary definition is the first bilingual dictionary
-(that appears on Yomichan) by default.</p>
-<p>This can be changed to the first monolingual dictionary by changing the following <a href="../yomichantemplates/">Yomichan template option</a> to <code>monolingual</code>:</p>
+(that appears on Yomitan) by default.</p>
+<p>This can be changed to the first monolingual dictionary by changing the following <a href="../yomitantemplates/">Yomitan template option</a> to <code>monolingual</code>:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">{{</span><span class="m m-Attribute">~!</span> <span class="nv">valid</span> <span class="nv">values</span><span class="err">:</span> <span class="s2">"bilingual"</span><span class="err">,</span> <span class="s2">"monolingual"</span> <span class="m">~</span><span class="cp">}}</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="cp">{{</span><span class="m m-Attribute">~set</span> <span class="s2">"opt-first-definition-type"</span> <span class="s2">"monolingual"</span> <span class="m">~</span><span class="cp">}}</span>
 </code></pre></div>
@@ -2237,7 +2237,7 @@ the dictionary name or a section of the definition.</p>
 or highlight the definition that makes sense with the context.</p>
 <p>This is enabled by default.
 In case you want to disable this behavior, set <code>opt-selection-text-enabled</code> to <code>false</code>.</p>
-<p><div class="video-container"><video style="width:100%;height:100%" controls alt="type:video"><source src="../assets/setupyomichan/selected_text.mp4" type="video/mp4"></source></video></div></p>
+<p><div class="video-container"><video style="width:100%;height:100%" controls alt="type:video"><source src="../assets/setupyomitan/selected_text.mp4" type="video/mp4"></source></video></div></p>
 <p>This manual selection behavior does the following:</p>
 <ol>
 <li>
@@ -2265,7 +2265,7 @@ Unfortunately, we do not live in this ideal world, so we must get this informati
 <ul>
 <li>If the selected text exactly matches any dictionary in the exported definition,
     then the dictionary entry is selected as the primary definition.</li>
-<li>Otherwise, we do the same search as the above, except we search through every dictionary's HTML (in Yomichan's order) for the selected text.</li>
+<li>Otherwise, we do the same search as the above, except we search through every dictionary's HTML (in Yomitan's order) for the selected text.</li>
 <li>If the selected text was found in some dictionary, then that dictionary is chosen.
     Otherwise, we fallback to the selected text itself.</li>
 </ul>
@@ -2370,7 +2370,7 @@ the incorrect definition.</p>
 <details class="example">
 <summary>Example: 垣根</summary>
 <p>On the word 垣根, if you have the デジタル大辞泉 dictionary before JMdict
-in Yomichan and you highlight <code>border</code>,
+in Yomitan and you highlight <code>border</code>,
 then デジタル大辞泉 will be incorrectly selected as the primary definition.</p>
 <p><figure markdown>
 <a href="../assets/definitions/highlight_fail/kakine.png"><img alt="" src="../assets/definitions/highlight_fail/kakine.png"></a>
@@ -2380,10 +2380,10 @@ then デジタル大辞泉 will be incorrectly selected as the primary definitio
 </figure></p>
 <p>This is due to a perfect storm of events:</p>
 <ul>
-<li>Due to Yomichan's implementation details, definitions with images contain a
+<li>Due to Yomitan's implementation details, definitions with images contain a
 <code>border</code> property in an internal style attribute.</li>
 <li>デジタル大辞泉 indeed has images for the word 垣根.</li>
-<li>デジタル大辞泉 is ordered before JMdict in Yomichan</li>
+<li>デジタル大辞泉 is ordered before JMdict in Yomitan</li>
 </ul>
 <p>With all these three combined, デジタル大辞泉 is prioritized over JMdict,
 leading to an incorrect dictionary selected and invalid HTML.</p>
@@ -2393,12 +2393,12 @@ leading to an incorrect dictionary selected and invalid HTML.</p>
 </details>
 </li>
 </ol>
-<h3 id="usage-on-yomichans-search-page-clipboard-page">Usage on Yomichan's Search Page / Clipboard Page<a class="headerlink" href="#usage-on-yomichans-search-page-clipboard-page" title="Permanent link">¶</a></h3>
-<p>On Yomichan's Search Page or Clipboard Page, the word is usually highlighted within the
+<h3 id="usage-on-yomitans-search-page-clipboard-page">Usage on Yomitan's Search Page / Clipboard Page<a class="headerlink" href="#usage-on-yomitans-search-page-clipboard-page" title="Permanent link">¶</a></h3>
+<p>On Yomitan's Search Page or Clipboard Page, the word is usually highlighted within the
 example sentence when searching for the word. For example, the word 「人里離れた」 is highlighted
 in the following image:</p>
 <figure>
-<p><a href="../assets/yomichan/search_page_highlight.png"><img alt="" src="../assets/yomichan/search_page_highlight.png"></a></p>
+<p><a href="assets/yomitan/search_page_highlight.png"><img alt="" src="assets/yomitan/search_page_highlight.png"></a></p>
 </figure>
 <p>This highlighted word interferes with the definition selector used by the handlebars,
 and may cause unexpected definitions to be selected as the primary definition instead.</p>
@@ -2406,8 +2406,8 @@ and may cause unexpected definitions to be selected as the primary definition in
 <ul>
 <li>Simply don't use the search page or clipboard page. Instead, you can use a
     <a href="../setuptextmedia/#getting-the-text-to-create-the-cards">texthooker setup</a>.</li>
-<li>Create a new Yomichan profile that matches the desired page(s),
-    and disable <code>Selected matching text</code> within your new profile in the Yomichan settings.
+<li>Create a new Yomitan profile that matches the desired page(s),
+    and disable <code>Selected matching text</code> within your new profile in the Yomitan settings.
     If you must use the search page or clipboard page,
     this is the recommended way to deal with the issue,
     as it has minimal impact on the rest of your workflow.</li>
@@ -2734,7 +2734,7 @@ This is because the resulting HTML is parsed with regex in order to match that f
 In computer science, it is recommended that
 <a href="https://stackoverflow.com/a/1732454">you should not parse HTML with regex</a>,
 because it is mathematically impossible to fully describe and parse HTML with regex.
-Unfortunately, Yomichan's handlebars does not expose any HTML parser,
+Unfortunately, Yomitan's handlebars does not expose any HTML parser,
 so we are left with using regex to parse our HTML.
 Due to this, an unexpected dictionary format may cause the resulting export to
 be invalid HTML.</p>
@@ -2754,7 +2754,7 @@ specified dictionaries can have their first lines removed.)</p>
 <hr>
 <h2 id="exporting-only-one-dictionary-entry">Exporting only one dictionary entry<a class="headerlink" href="#exporting-only-one-dictionary-entry" title="Permanent link">¶</a></h2>
 <p>A "dictionary entry" in this context is the single section of text corresponding to a
-number indicated by Yomichan, to the very far left.</p>
+number indicated by Yomitan, to the very far left.</p>
 <p>In the following example, 旺文社国語辞典 第十一版 and 明鏡国語辞典 第二版 each have one single entry,
 corresponding to <code>1</code> and <code>2</code> respectively.
 <code>JMdict (English)</code> has two entries, corresponding to <code>3</code> and <code>4</code>.</p>
@@ -2766,9 +2766,9 @@ multiple dictionary entries.
 Instead, most monolingual dictionaries store the definition as one gigantic entry.</p>
 <!--
 A "dictionary entry" in this context is the single section of text corresponding to a
-dictionary tag (with `Compact tags` turned off in Yomichan).
+dictionary tag (with `Compact tags` turned off in Yomitan).
 
-For example, recent version of the Yomichan JMdict dictionaries stores its definitions
+For example, recent version of the Yomitan JMdict dictionaries stores its definitions
 as multiple entries.
 It is almost never the case that monolingual dictionaries has multiple dictionary entries.
 Instead, most monolingual dictionaries store the definition as one gigantic entry.
@@ -2795,7 +2795,7 @@ which allows the note's CSS to re-compact the list.
 This is required over plaintext, because
 <a href="https://github.com/Aquafina-water-bottle/jmdict-english-yomichan">JMdict Extra</a>
 cannot compact export a compact definition normally.
-This is a <a href="https://github.com/FooSoft/yomichan/issues/2297">known issue</a> with Yomichan's
+This is a <a href="https://github.com/FooSoft/yomichan/issues/2297">known issue</a> with Yomitan's
 default handlebars.</p>
 <p>If you prefer using a legacy version of JMdict and prefer a full line of plaintext
 instead of a CSS list, you can set <code>opt-jmdict-list-format</code> to <code>false</code>.</p>
@@ -2835,7 +2835,7 @@ instead of collapsing them.
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 10, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 17, 2024</span>
       
     
   </small>

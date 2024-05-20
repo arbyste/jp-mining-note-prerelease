@@ -564,8 +564,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
   
   
     <li class="md-nav__item">
-      <a href="../setupyomichan/" class="md-nav__link">
-        Setup: Yomichan
+      <a href="../setupyomitan/" class="md-nav__link">
+        Setup: Yomitan
       </a>
     </li>
   
@@ -735,8 +735,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
   
   
     <li class="md-nav__item">
-      <a href="../setupextrayomichan/" class="md-nav__link">
-        Extra: Yomichan
+      <a href="../setupextrayomitan/" class="md-nav__link">
+        Extra: Yomitan
       </a>
     </li>
   
@@ -953,8 +953,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
   
   
     <li class="md-nav__item">
-      <a href="../updatingyomichan/" class="md-nav__link">
-        Updating: Yomichan
+      <a href="../updatingyomitan/" class="md-nav__link">
+        Updating: Yomitan
       </a>
     </li>
   
@@ -1395,8 +1395,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
   
   
     <li class="md-nav__item">
-      <a href="../yomichantemplates/" class="md-nav__link">
-        Yomichan Template Options (TODO)
+      <a href="../yomitantemplates/" class="md-nav__link">
+        Yomitan Template Options (TODO)
       </a>
     </li>
   
@@ -2075,7 +2075,7 @@ If you are looking for the stable release documentation, see <a href="https://ar
 
   <h1>JPMN Handlebars Package</h1>
 
-<div><p>This section documents how to use the jp-mining-note handlebars for Yomichan
+<div><p>This section documents how to use the jp-mining-note handlebars for Yomitan
 on any template that <strong>is not jp-mining-note</strong>.
 If you are using jp-mining-note, please see the
 <a href="../definitions/">Definitions</a>
@@ -2093,7 +2093,7 @@ page instead.</p>
 <p>The main difference between these handlebars and the handlebars used by jp-mining-note
 is that some default settings have been manually changed,
 so that definitions are exported in a minimalistic HTML format.
-This minimal format (almost) completely conforms with the default Yomichan handlebars,
+This minimal format (almost) completely conforms with the default Yomitan handlebars,
 so it should work for any note type.</p>
 <hr>
 <!--
@@ -2114,13 +2114,13 @@ Anki note templates, and will likely work on yours as well.
 
 <h2 id="setup-handlebars">Setup Handlebars<a class="headerlink" href="#setup-handlebars" title="Permanent link">¶</a></h2>
 <p>Before doing anything, please
-<a href="../faq/#how-do-i-backup-yomichan-settings">make a backup of your Yomichan settings.</a></p>
+<a href="../faq/#how-do-i-backup-yomitan-settings">make a backup of your Yomitan settings.</a></p>
 <details class="example">
 <summary>Video demo <small>(click here)</small></summary>
-<p><div class="video-container"><video style="width:100%;height:100%" controls alt="type:video"><source src="../assets/setupyomichan/import_yomichan_templates.mp4" type="video/mp4"></source></video></div></p>
+<p><div class="video-container"><video style="width:100%;height:100%" controls alt="type:video"><source src="../assets/setupyomitan/import_yomitan_templates.mp4" type="video/mp4"></source></video></div></p>
 </details>
 <ol>
-<li>Navigate to Yomichan Settings.</li>
+<li>Navigate to Yomitan Settings.</li>
 <li>Make sure that advanced settings are turned on (bottom left corner).</li>
 <li>Go to the <code>Anki</code> section</li>
 <li>Select <code>Configure Anki card templates...</code></li>
@@ -2133,7 +2133,7 @@ Anki note templates, and will likely work on yours as well.
 add the following template code as follows:</p>
 <ol>
 <li>
-<p>Copy and paste the code below to the <strong>top</strong> of the default Yomichan template code:</p>
+<p>Copy and paste the code below to the <strong>top</strong> of the default Yomitan template code:</p>
 <details class="examplecode">
 <summary>Click here to show the template code to copy.</summary>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">{{</span><span class="m m-Attribute">~!</span>                                                                      <span class="m">~</span><span class="cp">}}</span>
@@ -2240,7 +2240,7 @@ add the following template code as follows:</p>
 </details>
 </li>
 <li>
-<p>Copy and paste the code below to the <strong>bottom</strong> of the default Yomichan template code:</p>
+<p>Copy and paste the code below to the <strong>bottom</strong> of the default Yomitan template code:</p>
 <details class="examplecode">
 <summary>Click here to show the template code to copy.</summary>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="cp">{{</span><span class="m m-Attribute">~!</span> <span class="na">=============</span><span class="o">=</span> <span class="nv">ORIGINAL</span> <span class="nv">YOMITAN</span> <span class="nv">TEMPLATE</span> <span class="nv">CODE</span> <span class="nv">ABOVE</span> <span class="na">==============</span><span class="o">=</span> <span class="m">~</span><span class="cp">}}</span>
@@ -3635,7 +3635,7 @@ Set <code>opt-first-definition-type</code> to <code>monolingual</code> if you wa
 <p>TODO video</p>
 </details>
 <ol>
-<li>Navigate to Yomichan Settings.</li>
+<li>Navigate to Yomitan Settings.</li>
 <li>Go to the <code>Anki</code> section.</li>
 <li>Select <code>Anki card format...</code>.</li>
 <li>Under your definition field (<code>Glossary</code>, <code>VocabDef</code>, etc.),
@@ -3742,7 +3742,7 @@ depending on the <code>opt-first-definition-type</code> option.</p>
 </table>
 <p>If you want to select a different dictionary, highlight the dictionary, or a portion of the definition
 before importing. This will override the primary definition with the selected dictionary / definition.</p>
-<p><div class="video-container"><video style="width:100%;height:100%" controls alt="type:video"><source src="../assets/setupyomichan/selected_text.mp4" type="video/mp4"></source></video></div></p>
+<p><div class="video-container"><video style="width:100%;height:100%" controls alt="type:video"><source src="../assets/setupyomitan/selected_text.mp4" type="video/mp4"></source></video></div></p>
 <h3 id="frequency-sorting">Frequency Sorting<a class="headerlink" href="#frequency-sorting" title="Permanent link">¶</a></h3>
 <p>This package introduces <code>{jpmn-frequency-sort}</code>, which behaves the exact same as
 <a href="https://github.com/MarvNC/JP-Resources#sorting-mined-anki-cards-by-frequency">Marv's <code>{freq}</code> handlebars</a>.
@@ -3753,7 +3753,7 @@ instead of within the function.</p>
 <ul>
 <li>TODO <code>jpmn-sentence-bolded-furigana-plain</code></li>
 <li>TODO binary field handlebars</li>
-<li>link to appropriate yomichan template section</li>
+<li>link to appropriate yomitan template section</li>
 </ul>
 <hr>
 <h2 id="plaintext-options">Plaintext Options<a class="headerlink" href="#plaintext-options" title="Permanent link">¶</a></h2>
@@ -3772,10 +3772,10 @@ instead of within the function.</p>
 <a href="../definitions/">Definitions</a> page.</p>
 <h3 id="opt__plaintext__stylize-glossary"><code>opt__plaintext__stylize-glossary</code><a class="headerlink" href="#opt__plaintext__stylize-glossary" title="Permanent link">¶</a></h3>
 <p>Setting this option to <code>true</code> will no longer stylize the definition handlebars for jp-mining-note
-usage, and instead stylizes it to be virtually the same as Yomichan's default HTML structure.</p>
+usage, and instead stylizes it to be virtually the same as Yomitan's default HTML structure.</p>
 <details class="example">
-<summary>Differences between default Yomichan format and JPMN plaintext <small>(click here)</small></summary>
-<p>There are a few minor differences between Yomichan's format and these non-stylized definitions:</p>
+<summary>Differences between default Yomitan format and JPMN plaintext <small>(click here)</small></summary>
+<p>There are a few minor differences between Yomitan's format and these non-stylized definitions:</p>
 <ul>
 <li>The dictionary and tags are not italicized. This is to avoid seeing italic kanjis/kana.</li>
 <li>
@@ -3790,7 +3790,7 @@ usage, and instead stylizes it to be virtually the same as Yomichan's default HT
 <li>
 <p>Dictionaries with only one entry is formatted as a list of one element by default.
     This is usually not desired. To disable this behavior and make the behavior more like
-    Yomichan, set <code>opt__plaintext__one-dict-entry-only-no-list</code> to <code>true</code>.</p>
+    Yomitan, set <code>opt__plaintext__one-dict-entry-only-no-list</code> to <code>true</code>.</p>
 </li>
 <li>
 <p>The first line for most dictionaries are removed by default.
@@ -3906,7 +3906,7 @@ and is therefore incompatible with these handlebars.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 10, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 17, 2024</span>
       
     
   </small>

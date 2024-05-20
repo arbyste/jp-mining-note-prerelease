@@ -10,20 +10,20 @@
       
       
       
-        <link rel="canonical" href="https://arbyste.github.io/jp-mining-note-prerelease/yomichantemplates/">
+        <link rel="canonical" href="https://arbyste.github.io/jp-mining-note-prerelease/updatingyomitan/">
       
       
-        <link rel="prev" href="../compiletimeoptions/">
+        <link rel="prev" href="../updatingjpmn/">
       
       
-        <link rel="next" href="../modding/">
+        <link rel="next" href="../setupchanges/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.15">
     
     
       
-        <title>Yomichan Template Options (TODO) - jp-mining-note</title>
+        <title>Updating: Yomitan - jp-mining-note</title>
       
     
     
@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#accessing-editing" class="md-skip">
+        <a href="#updating-yomitans-anki-card-format" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@ If you are looking for the stable release documentation, see <a href="https://ar
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Yomichan Template Options (TODO)
+              Updating: Yomitan
             
           </span>
         </div>
@@ -252,13 +252,15 @@ If you are looking for the stable release documentation, see <a href="https://ar
         
   
   
+    
+  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../updating/" class="md-tabs__link">
+      <a href="../updating/" class="md-tabs__link md-tabs__link--active">
         Updating
       </a>
     </li>
@@ -268,15 +270,13 @@ If you are looking for the stable release documentation, see <a href="https://ar
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="../quickstart/" class="md-tabs__link md-tabs__link--active">
+      <a href="../quickstart/" class="md-tabs__link">
         Reference
       </a>
     </li>
@@ -564,8 +564,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
   
   
     <li class="md-nav__item">
-      <a href="../setupyomichan/" class="md-nav__link">
-        Setup: Yomichan
+      <a href="../setupyomitan/" class="md-nav__link">
+        Setup: Yomitan
       </a>
     </li>
   
@@ -735,8 +735,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
   
   
     <li class="md-nav__item">
-      <a href="../setupextrayomichan/" class="md-nav__link">
-        Extra: Yomichan
+      <a href="../setupextrayomitan/" class="md-nav__link">
+        Extra: Yomitan
       </a>
     </li>
   
@@ -896,14 +896,16 @@ If you are looking for the stable release documentation, see <a href="https://ar
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
       
       
       
@@ -912,7 +914,7 @@ If you are looking for the stable release documentation, see <a href="https://ar
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           Updating
@@ -951,11 +953,68 @@ If you are looking for the stable release documentation, see <a href="https://ar
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../updatingyomichan/" class="md-nav__link">
-        Updating: Yomichan
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Updating: Yomitan
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Updating: Yomitan
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#updating-yomitans-anki-card-format" class="md-nav__link">
+    Updating Yomitan's Anki Card Format
+  </a>
+  
+    <nav class="md-nav" aria-label="Updating Yomitan's Anki Card Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#refreshing-yomitan-fields" class="md-nav__link">
+    Refreshing Yomitan Fields
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-yomitan-templates" class="md-nav__link">
+    Updating Yomitan Templates
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1029,16 +1088,14 @@ If you are looking for the stable release documentation, see <a href="https://ar
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
       
@@ -1047,7 +1104,7 @@ If you are looking for the stable release documentation, see <a href="https://ar
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Reference
@@ -1338,18 +1395,16 @@ If you are looking for the stable release documentation, see <a href="https://ar
               
   
   
-    
-  
   
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_21" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_21" >
       
       
       
@@ -1358,7 +1413,7 @@ If you are looking for the stable release documentation, see <a href="https://ar
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_21_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_21_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4_21">
           <span class="md-nav__icon md-icon"></span>
           Options
@@ -1397,48 +1452,11 @@ If you are looking for the stable release documentation, see <a href="https://ar
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Yomichan Template Options (TODO)
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Yomichan Template Options (TODO)
+    <li class="md-nav__item">
+      <a href="../yomitantemplates/" class="md-nav__link">
+        Yomitan Template Options (TODO)
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#accessing-editing" class="md-nav__link">
-    Accessing &amp; Editing
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1811,8 +1829,28 @@ If you are looking for the stable release documentation, see <a href="https://ar
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#accessing-editing" class="md-nav__link">
-    Accessing &amp; Editing
+  <a href="#updating-yomitans-anki-card-format" class="md-nav__link">
+    Updating Yomitan's Anki Card Format
+  </a>
+  
+    <nav class="md-nav" aria-label="Updating Yomitan's Anki Card Format">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#refreshing-yomitan-fields" class="md-nav__link">
+    Refreshing Yomitan Fields
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#updating-yomitan-templates" class="md-nav__link">
+    Updating Yomitan Templates
   </a>
   
 </li>
@@ -1836,69 +1874,82 @@ If you are looking for the stable release documentation, see <a href="https://ar
     
       
     
-    <a href="https://github.com/arbyste/jp-mining-note/tree/dev/raw/dev/docs/docs/yomichantemplates.md" title="View source of this page" class="md-content__button md-icon">
+    <a href="https://github.com/arbyste/jp-mining-note/tree/dev/raw/dev/docs/docs/updatingyomitan.md" title="View source of this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
     </a>
   
 
 
-  <h1>Yomichan Template Options (TODO)</h1>
+  <h1>Updating: Yomitan</h1>
 
-<div><p>Yomichan template options are options that are specified, as you may have guessed,
-in Yomichan's templates.
-These options are applied on card creation, so
-changing these options will only affect cards created in the future.</p>
+<div><p>This section is dedicated to updating Yomitan settings required to use JPMN.</p>
 <hr>
-<h2 id="accessing-editing">Accessing &amp; Editing<a class="headerlink" href="#accessing-editing" title="Permanent link">¶</a></h2>
-<p>TODO video</p>
-<p>To access the Yomichan template options,
-head to the Yomichan templates as normal:</p>
+<h2 id="updating-yomitans-anki-card-format">Updating Yomitan's Anki Card Format<a class="headerlink" href="#updating-yomitans-anki-card-format" title="Permanent link">¶</a></h2>
+<p>To update the Yomitan Format, the steps should be almost the same as the
+one specified already in the <a href="../setupyomitan/#yomitan-fields">setup</a>.
+The most important difference is that if a new field was added or a field has been renamed,
+then <strong>the field will not show up automatically in Yomitan</strong>.</p>
+<h3 id="refreshing-yomitan-fields">Refreshing Yomitan Fields<a class="headerlink" href="#refreshing-yomitan-fields" title="Permanent link">¶</a></h3>
+<details class="example">
+<summary>Video Demo <small>(click here)</small></summary>
+<p><div class="video-container"><video style="width:100%;height:100%" controls alt="type:video"><source src="../assets/updating/updating_yomitan_fields.mp4" type="video/mp4"></source></video></div></p>
+<p>TODO update the video...</p>
+</details>
 <ol>
-<li>Navigate to Yomichan Settings.</li>
-<li>Make sure that advanced settings are turned on (bottom left corner).</li>
-<li>Go to the <code>Anki</code> section</li>
-<li>Select <code>Configure Anki card templates...</code></li>
+<li>As always, create a <a href="../faq/#how-do-i-backup-yomitan-settings">backup</a>
+    of your Yomitan settings, just in case.</li>
+<li>After installing the note update, create a temporary copy of the note by: <br>
+    <code>Tools</code> <br>
+    →  <code>Manage Note Types</code> <br>
+    →  <code>Add</code> <br>
+    →  Select <code>Clone: JP Mining Note</code> →  <code>Ok</code> <br>
+    →  Name this to anything you want. The following examples will use <code>JP Mining Note copy</code>. <br>
+    →  <code>Ok</code><br>
+    →  <code>Close</code></li>
+<li>If you are currently viewing Yomitan Settings, please refresh the page.</li>
+<li>Head over to Anki Card Format <a href="../setupyomitan/#yomitan-fields">as before</a>.</li>
+<li>In the top right corner, change <code>Model</code> to <code>JP Mining Note copy</code>,
+    and then change it back to <code>JP Mining Note</code>.
+    (If you don't see <code>JP Mining Note copy</code>, please refresh the page.)</li>
+<li>Update the fields as specified.<ul>
+<li>It should be specified in the text you see when updating.
+    However, you should also simply compare the table on the
+    <a href="../setupyomitan/#yomitan-fields">setup page</a> to your filled out fields.</li>
+</ul>
+</li>
+<li>Remove the temporary note: <br>
+    <code>Tools</code> <br>
+    →  <code>Manage Note Types</code> <br>
+    →  (select <code>JP Mining Note copy</code>) <br>
+    →  <code>Delete</code></li>
 </ol>
-<p>The options should be available at the very top of the template code.</p>
-<!--
-## Options
-
-`opt-selection-text-enabled`
-
-- disabled -> selection text is ignored
-- enabled -> selection text (if exists) is processed according to the options below:
-
-`opt-selection-text-dictionary`
-
-- if the selected text is a dictionary, then replaces the PrimaryDefinition with said dictionary
-
-`opt-selection-text-glossary`
-
-- replaces the PrimaryDefinition with the selected text
-- the dictionary that the selected text will not be detected, so the same dictionary
-  should appear in one of the SecondaryDefinition or ExtraDefinition fields.
-- if both `opt-selection-text-dictionary` and `opt-selection-text-glossary` are enabled,
-  the `opt-selection-text-dictionary` option takes priority over `opt-selection-text-glossary`,
-  i.e. the dictionary is searched first, then if not found the selected text is used
-
-`opt-selection-text-glossary-attempt-bold`
-
-- attempts to replace the PrimaryDefinition field with the full glossary value, with
-  only the selected section highlighted
-- do NOT rely on this working all the time: many factors can make it not work
-  (especially if the highlighted text contains custom formatting or newlines)
-- if could not be detected, falls back to the normal selected text
-- `opt-selection-text-glossary` must be true for this option to have any effect
-
---></div>
+<div class="admonition info">
+<p class="admonition-title">Explanation</p>
+<p>Using the temporary copy of the updated card
+means that fields that remain unchanged between the old card and new card
+will be transferred automatically in the Yomitan Format.
+If you simply choose some random model like <code>Basic</code>,
+then almost none of the fields will be preserved, as the <code>Basic</code> card
+does not have any matching fields with the <code>JP Mining Note</code> model.</p>
+</div>
+<hr>
+<h2 id="updating-yomitan-templates">Updating Yomitan Templates<a class="headerlink" href="#updating-yomitan-templates" title="Permanent link">¶</a></h2>
+<p>Like the above, you can simply follow the steps already specified in <a href="../setupyomitan/#yomitan-templates">setup</a>.</p>
+<p>Again, please make a <a href="../faq/#how-do-i-backup-yomitan-settings">backup</a>
+of your Yomitan settings just in case,
+and again, please make sure you <strong>reset the existing templates</strong> (unless you know what you are doing).</p>
+<p>Note that your Yomitan template options will be reset if you follow all the steps.
+I recommend temporarily saving a copy of the Yomitan templates so you can easily
+reset your Yomitan template options after updating.</p>
+<hr></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 12, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 13, 2024</span>
       
     
   </small>

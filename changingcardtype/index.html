@@ -564,8 +564,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
   
   
     <li class="md-nav__item">
-      <a href="../setupyomichan/" class="md-nav__link">
-        Setup: Yomichan
+      <a href="../setupyomitan/" class="md-nav__link">
+        Setup: Yomitan
       </a>
     </li>
   
@@ -735,8 +735,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
   
   
     <li class="md-nav__item">
-      <a href="../setupextrayomichan/" class="md-nav__link">
-        Extra: Yomichan
+      <a href="../setupextrayomitan/" class="md-nav__link">
+        Extra: Yomitan
       </a>
     </li>
   
@@ -953,8 +953,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
   
   
     <li class="md-nav__item">
-      <a href="../updatingyomichan/" class="md-nav__link">
-        Updating: Yomichan
+      <a href="../updatingyomitan/" class="md-nav__link">
+        Updating: Yomitan
       </a>
     </li>
   
@@ -1488,8 +1488,8 @@ If you are looking for the stable release documentation, see <a href="https://ar
   
   
     <li class="md-nav__item">
-      <a href="../yomichantemplates/" class="md-nav__link">
-        Yomichan Template Options (TODO)
+      <a href="../yomitantemplates/" class="md-nav__link">
+        Yomitan Template Options (TODO)
       </a>
     </li>
   
@@ -1960,15 +1960,15 @@ If you are looking for the stable release documentation, see <a href="https://ar
 <h2 id="default-card-type">Default Card Type<a class="headerlink" href="#default-card-type" title="Permanent link">¶</a></h2>
 <p>TODO video</p>
 <p>If you want to change the card type for all new cards, you can simply
-fill the field in <a href="../setupyomichan/#yomichan-fields">Yomichan's Anki Card Format</a>.</p>
+fill the field in <a href="../setupyomitan/#yomitan-fields">Yomitan's Anki Card Format</a>.</p>
 <p>For example, if you want to set the default card type to be a sentence card:</p>
 <ul>
-<li>Navigate to Yomichan settings, and then to <code>Anki</code> →  <code>Configure Anki card format...</code>.</li>
+<li>Navigate to Yomitan settings, and then to <code>Anki</code> →  <code>Configure Anki card format...</code>.</li>
 <li>Set <code>IsSentenceCard</code> to <code>1</code>.</li>
 </ul>
 <p>This will set all new cards to be a sentence card by default.</p>
 <p>However, what if you don't want <em>ALL</em> new cards to be sentence cards?
-With the power of Yomichan handlebars, it is possible to selectively fill fields depending
+With the power of Yomitan handlebars, it is possible to selectively fill fields depending
 on select properties of the target word.</p>
 <h3 id="is-hiragana">Is Hiragana<a class="headerlink" href="#is-hiragana" title="Permanent link">¶</a></h3>
 <p><sup><i>New in version <code>0.12.0.0</code> (latest version: <code>0.12.0.0-prerelease-16</code>)</i></sup></p>
@@ -1981,7 +1981,7 @@ you can create different card types by default using these helpers.</p>
 but want hiragana terms to be <a href="../cardtypes/#targeted-sentence-card">TSCs</a>.
 To do exactly that, do the following:</p>
 <ul>
-<li>Navigate to Yomichan settings, and then to <code>Anki</code> →  <code>Configure Anki card format...</code>.</li>
+<li>Navigate to Yomitan settings, and then to <code>Anki</code> →  <code>Configure Anki card format...</code>.</li>
 <li>Set <code>IsTargetedSentenceCard</code> to <code>{jpmn-filled-if-word-is-hiragana}</code>.</li>
 </ul>
 <details class="example">
@@ -2050,7 +2050,7 @@ in order for this helper to function.</p>
 <h2 id="batch-change-card-type">Batch Change Card Type<a class="headerlink" href="#batch-change-card-type" title="Permanent link">¶</a></h2>
 <p>You may want to change the card type of many existing cards all at once.
 For example, you may have cards imported into JPMN,
-or cards that were simply not created by Yomichan in the first place.</p>
+or cards that were simply not created by Yomitan in the first place.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>As always, before mass editing your collection, please
@@ -2095,7 +2095,7 @@ see <a href="#is-hiragana">here</a>.</p></div>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 10, 2023</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 17, 2024</span>
       
     
   </small>
