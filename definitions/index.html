@@ -2522,7 +2522,7 @@ There are many ways to control exactly what content is removed, and in what way.
         meaning it hides the dictionary tag and the text to the right.
 
     ??? example "CSS to hide the entire first line for all dictionaries <small>(click here)</small>"
-        <sup><i>New in version `0.11.0.0` (latest version: `0.12.0.0-prerelease-17`)</i></sup>
+        <sup><i>New in version `0.11.0.0` (latest version: `0.12.0.0-prerelease-18`)</i></sup>
 
         1. Under `extra/style.scss`, add the following code:
 
@@ -2575,7 +2575,7 @@ There are many ways to control exactly what content is removed, and in what way.
     * This hides all the text to the right of the dictionary tag.
 
     ??? example "CSS to hide extra text <small>(click here)</small>"
-        <sup><i>New in version `0.11.0.0` (latest version: `0.12.0.0-prerelease-17`)</i></sup>
+        <sup><i>New in version `0.11.0.0` (latest version: `0.12.0.0-prerelease-18`)</i></sup>
 
         {{ css_oubunsha }}
 
@@ -2728,7 +2728,7 @@ for specific dictionaries.</p>
 </li>
 </ol>
 <h3 id="when-html-can-break">When HTML can break<a class="headerlink" href="#when-html-can-break" title="Permanent link">¶</a></h3>
-<p><sup><i>New in version <code>0.12.0.0</code> (latest version: <code>0.12.0.0-prerelease-17</code>)</i></sup></p>
+<p><sup><i>New in version <code>0.12.0.0</code> (latest version: <code>0.12.0.0-prerelease-18</code>)</i></sup></p>
 <p>As mentioned in the algorithms discussion, the method used by this note can lead to invalid HTML.
 This is because the resulting HTML is parsed with regex in order to match that first line.
 In computer science, it is recommended that
@@ -2741,7 +2741,7 @@ be invalid HTML.</p>
 <p>If you do not plan on using this feature, you should set <code>opt-wrap-first-line-spans</code> to <code>false</code>
 to remove the possibility of invalid HTML.</p>
 <h3 id="hide-the-first-line-for-select-dictionaries">Hide the first line for select dictionaries<a class="headerlink" href="#hide-the-first-line-for-select-dictionaries" title="Permanent link">¶</a></h3>
-<p><sup><i>New in version <code>0.12.0.0</code> (latest version: <code>0.12.0.0-prerelease-17</code>)</i></sup></p>
+<p><sup><i>New in version <code>0.12.0.0</code> (latest version: <code>0.12.0.0-prerelease-18</code>)</i></sup></p>
 <p>The following two options are useful if you want to ignore certain problematic dictionaries,
 that do not play well with the regex above.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="cp">{{</span><span class="m m-Attribute">~set</span> <span class="s2">"opt-first-line-regex-mode"</span> <span class="s2">"except"</span><span class="m">~</span><span class="cp">}}</span>
