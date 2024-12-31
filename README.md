@@ -3,6 +3,7 @@
 The easiest way to install JPMN is to follow the instructions in the documentation, which can be found at:
 
 **Stable:** https://arbyste.github.io/jp-mining-note/
+
 **Prerelease:** https://arbyste.github.io/jp-mining-note-prerelease/
 
 # jp-mining-note
