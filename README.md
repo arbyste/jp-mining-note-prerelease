@@ -1,6 +1,7 @@
-**Note:** If you're looking for JPMN, don't clone this repo. This repo is only used for hosting the documentation for the prerelease version of the note. The actual repo is [here](https://github.com/arbyste/jp-mining-note).
+**Note:** If you're looking for JPMN, don't clone this repo. This repo is only used for hosting the documentation for the prerelease version of the note. The actual repo is [here](https://github.com/arbyste/jp-mining-note). Use the master branch for the stable version, and the dev branch for the prerelease version.
 
 The easiest way to install JPMN is to follow the instructions in the documentation, which can be found at:
+
 **Stable:**https://arbyste.github.io/jp-mining-note/
 **Prerelease:**https://arbyste.github.io/jp-mining-note-prerelease/
 
