@@ -1,3 +1,9 @@
+**Note:** If you're looking for JPMN, don't clone this repo. This repo is only used for hosting the documentation for the prerelease version of the note. The actual repo is [here](https://github.com/arbyste/jp-mining-note).
+
+The easiest way to install JPMN is to follow the instructions in the documentation, which can be found at:
+**Stable:**https://arbyste.github.io/jp-mining-note/
+**Prerelease:**https://arbyste.github.io/jp-mining-note-prerelease/
+
 # jp-mining-note
 
 **jp-mining-note** (JPMN) is an Anki card template for studying Japanese,
