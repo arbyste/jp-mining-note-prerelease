@@ -2306,13 +2306,9 @@ This is usually found in one of these places:</p>
 <li>Force the pitch accent group with tags (see below).</li>
 </ol>
 <h3 id="kifuku-coloring">Kifuku Coloring<a class="headerlink" href="#kifuku-coloring" title="Permanent link">¶</a></h3>
-<p><sup><i>New in version <code>0.12.0.0</code> (latest version: <code>0.12.0.0-prerelease-21</code>)</i></sup>
-A word is automatically colored as 起伏 if the <code>WordTags</code> field contains a verb tag,
-and its pitch accent group is not 平板.</p>
-<p>This <code>WordTags</code> field can only be filled out if you have a modern version of the
-JMdict or Jitendex dictionary in Yomitan.
-For old cards that do not have this field filled, you will have to manually mark
-the word with <code>-1</code> (in <code>PAOverride</code>).</p>
+<p><sup><i>New in version <code>0.12.0.0-prerelease-21</code> (latest version: <code>0.12.0.0-prerelease-21</code>)</i></sup></p>
+<p>To color a word with the 起伏 pitch accent, put the value <code>-1</code> in the <code>PAOverride</code> field. When setting up the Yomitan templates, the handlebar <code>{jpmn-filled-if-kifuku}</code> should have been put into the PAOverride field. If Yomitan can determine that a word is kifuku, then this handlebar will automatically fill the PAOverride field with a <code>-1</code>.</p>
+<p>If you don't want Yomitan to automatically mark 起伏 words with a <code>-1</code>, then simply go to <code>Configure Anki flashcards...</code> in the Yomitan settings, and delete <code>{jpmn-filled-if-kifuku}</code> from the PAOverride field.</p>
 <h3 id="override-pitch-accent-group">Override Pitch Accent Group<a class="headerlink" href="#override-pitch-accent-group" title="Permanent link">¶</a></h3>
 <p>In some extremely rare cases, you must set manually set the pitch accent group,
 if the available options do not work.
@@ -2677,7 +2673,7 @@ CSS specification.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 13, 2024</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 16, 2025</span>
       
     
   </small>
