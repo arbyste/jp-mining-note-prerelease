@@ -2267,7 +2267,7 @@ and must be enabled in the <a href="../runtimeoptions/">runtime options</a>:</p>
 </tbody>
 </table>
 <h3 id="controlling-what-gets-colored">Controlling What Gets Colored<a class="headerlink" href="#controlling-what-gets-colored" title="Permanent link">¶</a></h3>
-<p><sup><i>New in version <code>0.12.0.0</code> (latest version: <code>0.12.0.0-prerelease-21</code>)</i></sup></p>
+<p><sup><i>New in version <code>0.12.0.0</code> (latest version: <code>0.12.0.0-prerelease-22</code>)</i></sup></p>
 <p>There are many <a href="../runtimeoptions/">runtime options</a> that change exactly what is colored.
 By default, everything except words found in tooltips (kanji hover and word indicators)
 are highlighted.</p>
@@ -2306,7 +2306,7 @@ This is usually found in one of these places:</p>
 <li>Force the pitch accent group with tags (see below).</li>
 </ol>
 <h3 id="kifuku-coloring">Kifuku Coloring<a class="headerlink" href="#kifuku-coloring" title="Permanent link">¶</a></h3>
-<p><sup><i>New in version <code>0.12.0.0-prerelease-21</code> (latest version: <code>0.12.0.0-prerelease-21</code>)</i></sup></p>
+<p><sup><i>New in version <code>0.12.0.0-prerelease-22</code> (latest version: <code>0.12.0.0-prerelease-22</code>)</i></sup></p>
 <p>To color a word with the 起伏 pitch accent, put the value <code>-1</code> in the <code>PAOverride</code> field. When setting up the Yomitan templates, the handlebar <code>{jpmn-filled-if-kifuku}</code> should have been put into the PAOverride field. If Yomitan can determine that a word is kifuku, then this handlebar will automatically fill the PAOverride field with a <code>-1</code>.</p>
 <p>If you don't want Yomitan to automatically mark 起伏 words with a <code>-1</code>, then simply go to <code>Configure Anki flashcards...</code> in the Yomitan settings, and delete <code>{jpmn-filled-if-kifuku}</code> from the PAOverride field.</p>
 <h3 id="override-pitch-accent-group">Override Pitch Accent Group<a class="headerlink" href="#override-pitch-accent-group" title="Permanent link">¶</a></h3>
@@ -2351,7 +2351,7 @@ More info on this can be found in the <a href="#2-paoverride">PAOverride field</
 </div>
 <hr>
 <h2 id="1-paoverridetext">(1) PAOverrideText<a class="headerlink" href="#1-paoverridetext" title="Permanent link">¶</a></h2>
-<p><sup><i>New in version <code>0.11.0.0</code> (latest version: <code>0.12.0.0-prerelease-21</code>)</i></sup></p>
+<p><sup><i>New in version <code>0.11.0.0</code> (latest version: <code>0.12.0.0-prerelease-22</code>)</i></sup></p>
 <p>If the <code>PAOverrideText</code> field is filled, then this field is displayed exactly as is,
 without any changes or parsing.
 This provides the most flexibility, but the least ease of usage.</p>
@@ -2401,7 +2401,7 @@ downstep to be after the second last mora.</p>
 </tbody>
 </table>
 <h4 id="multiple-numbers">Multiple Numbers<a class="headerlink" href="#multiple-numbers" title="Permanent link">¶</a></h4>
-<p><sup><i>New in version <code>0.11.0.0</code> (latest version: <code>0.12.0.0-prerelease-21</code>)</i></sup></p>
+<p><sup><i>New in version <code>0.11.0.0</code> (latest version: <code>0.12.0.0-prerelease-22</code>)</i></sup></p>
 <p>Multiple numbers can be used, as long as they are separated by commas.
 This is useful on certain words with devoiced mora, where the pitch accent
 can be multiple positions with little real distinction.</p>
@@ -2443,7 +2443,7 @@ Additionally, commas cannot be bolded.</p>
 but <code>0,&lt;b&gt;1,2&lt;/b&gt;,3</code> and <code>0,&lt;b&gt;1,&lt;/b&gt;2,3</code> are invalid.</p>
 </div>
 <h3 id="22-paoverride-text-format">(2.2) PAOverride: Text Format<a class="headerlink" href="#22-paoverride-text-format" title="Permanent link">¶</a></h3>
-<p><sup><i>New in version <code>0.11.0.0</code> (latest version: <code>0.12.0.0-prerelease-21</code>)</i></sup></p>
+<p><sup><i>New in version <code>0.11.0.0</code> (latest version: <code>0.12.0.0-prerelease-22</code>)</i></sup></p>
 <details class="info">
 <summary>How To Type Special Characters <small>(click here)</small></summary>
 <p>This section requires you to type certain special characters.
@@ -2557,7 +2557,7 @@ This will behave exactly the same as <code>PAOverrideText</code>.</p>
 and the tested word is covered in said dictionary.</p>
 <p>By default, the first pitch of the first dictionary is shown.</p>
 <h3 id="show-all-possibilities-in-dictionary">Show All Possibilities in Dictionary<a class="headerlink" href="#show-all-possibilities-in-dictionary" title="Permanent link">¶</a></h3>
-<p><sup><i>New in version <code>0.11.0.0</code> (latest version: <code>0.12.0.0-prerelease-21</code>)</i></sup></p>
+<p><sup><i>New in version <code>0.11.0.0</code> (latest version: <code>0.12.0.0-prerelease-22</code>)</i></sup></p>
 <p>TODO: update pictures with correct config + add new config value for all dictionaries</p>
 <p>Sometimes, pitch accent dictionaries show multiple pitch accents for a word.
 However, only the first pitch accent is shown by default.</p>

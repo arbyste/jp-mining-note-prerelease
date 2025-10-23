@@ -77,7 +77,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#v0-12-0-0-prerelease-13" class="md-skip">
+        <a href="#v0-12-0-0-prerelease-22" class="md-skip">
           Skip to content
         </a>
       
@@ -997,6 +997,13 @@ If you are looking for the stable release documentation, see <a href="https://ar
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#v0-12-0-0-prerelease-22" class="md-nav__link">
+    2025/10/22 (JPMN 0.12.0.0-prerelease-22)
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#v0-12-0-0-prerelease-13" class="md-nav__link">
@@ -1961,6 +1968,13 @@ If you are looking for the stable release documentation, see <a href="https://ar
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#v0-12-0-0-prerelease-22" class="md-nav__link">
+    2025/10/22 (JPMN 0.12.0.0-prerelease-22)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#v0-12-0-0-prerelease-13" class="md-nav__link">
     2023/10/08 (JPMN 0.12.0.0-prerelease-13)
   </a>
@@ -2155,6 +2169,16 @@ programs and if there are fixes or workarounds for them.</p>
 please check here first! If you can't find any solution,
 <a href="../faq/#contact-info">please let me know!</a></p>
 <hr>
+<h2 id="v0-12-0-0-prerelease-22">2025/10/22 (JPMN 0.12.0.0-prerelease-22)<a class="headerlink" href="#v0-12-0-0-prerelease-22" title="Permanent link">¶</a></h2>
+<p>This version of jp-mining-note introduces the ability to automatically mark cards
+as having the kifuku pitch accent pattern. To use this feature, you will need to
+update to the latest Yomitan handlebars (Version <code>v1.0.15</code> as of this update). You
+will also need to add the <code>{jpmn-filled-if-kifuku}</code> handlebar to the PAOverride field.
+To update these values, first make a <a href="../faq/#how-do-i-backup-yomitan-settings">backup</a> 
+of your Yomitan settings, then simply go through the initial <a href="../setupyomitan/">Yomitan setup guide</a>.
+Make sure you fully reset the Handlebar templates by clicking the red <code>Reset Templates</code> button
+before copying the new templates across.</p>
+<p>See <a href="../autopa/#kifuku-coloring">Kifuku Coloring</a> for more info about this feature.</p>
 <h2 id="v0-12-0-0-prerelease-13">2023/10/08 (JPMN 0.12.0.0-prerelease-13)<a class="headerlink" href="#v0-12-0-0-prerelease-13" title="Permanent link">¶</a></h2>
 <p>This version of jp-mining-note fixes a bug that was introduced with a recent
 AJT Japanese update. This bug resulted in an <code>Unexpected flattened.childNode</code>
